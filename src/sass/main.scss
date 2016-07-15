@@ -1,0 +1,54 @@
+// modules
+@import 'modules/var';
+@import 'modules/mixins';
+@import 'modules/fonts';
+@import 'base/reset';
+
+// partials
+@import 'partials/header';
+@import 'partials/banner';
+@import 'partials/footer';
+
+//
+// base styles
+*{
+  box-sizing: border-box;
+	transition: all .2s;
+}
+
+html { 
+    font-family: $main-ff;
+    font-size: 16px;
+    line-height: 22px;
+    height: 100%;
+}
+body {
+  margin: 0;
+  height: 100%;
+}
+
+.wrapper{
+    max-width: 960px;
+    margin: 0 auto;
+    height: 100%;
+}
+.clearfix:after { 
+   content: '.';
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+   font-size: 0;
+}
+
+h1, h2, h3, h4, h5, p{
+    margin: 0;
+}
+
+.content-wrapper {
+  min-height: 100%;
+}
+
+.content-inside {
+  padding-bottom: 60px;
+}
