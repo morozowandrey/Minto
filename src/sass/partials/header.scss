@@ -1,3 +1,41 @@
 .header {
-	
+	background: url(../src/images/concept_header_bg.png);
+
+	display: flex;
+
+	&-logo {
+		margin: 65px 0 35px 70px;
+	}
+
+	&-caption {
+		margin-top: 105px;
+	    margin-left: 140px;
+
+	    color: $white;
+	    font-size: 36px;
+	    line-height: 36px;
+	}
+
+	&-caption:after {
+		content: '';
+		background: $white;
+		display: block;
+
+		height: 2px;
+		width: 295%;
+		
+		margin-top: 5px;
+
+		position: relative;
+		right: 4px;
+	}
+
+	// specific styles for different pages
+	// &--live-minto-course{
+	//   	background: url(../src/images/homepage_bg.png);
+
+	//     .header-caption {
+	// 		color: $main-red;
+	//     }
+	// }
 }

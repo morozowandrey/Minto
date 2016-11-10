@@ -6,7 +6,7 @@
 
 // partials
 @import 'partials/header';
-@import 'partials/banner';
+@import 'partials/side-menu';
 @import 'partials/footer';
 
 //
@@ -28,6 +28,7 @@ body {
 }
 
 .wrapper{
+    max-width: 1200px;
     min-width: 1200px;
     margin: 0 auto;
     height: 100%;
