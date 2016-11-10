@@ -1,6 +1,5 @@
 module.exports = function(grunt) {
 
-    // 1. Вся настройка находится здесь
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
@@ -8,8 +7,8 @@ module.exports = function(grunt) {
             dist: {
                 src: [
                     'src/js/libs/*.js',
-                    'src/js/modules/*.js', // Все JS в папке modules
-                    'src/js/global.js'  // Конкретный файл
+                    'src/js/modules/*.js',
+                    'src/js/global.js'
                 ],
                 dest: 'build/production.js',
             }
@@ -18,6 +17,16 @@ module.exports = function(grunt) {
             build: {
                 src: 'build/production.js',
                 dest: 'build/production.min.js'
+            }
+        },
+        pug: {
+            dist: {
+                options: {
+                    pretty: true
+                },
+                files: {
+                    'index.html': 'src/pug/**/*.pug'
+                }
             }
         },
         imagemin: {
@@ -64,18 +73,23 @@ module.exports = function(grunt) {
                     livereload: true
                 },
             },
+            pug: {
+                files: ['src/pug/**/*.pug'],
+                tasks: ['pug'],
+                options: {
+                },
+            }
         }
 
     });
 
-    // 3. Тут мы указываем Grunt, что хотим использовать этот плагин
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-pug');
 
-    // 4. Указываем, какие задачи выполняются, когда мы вводим «grunt» в терминале
-    grunt.registerTask('default', ['concat', 'uglify', 'imagemin','sass', 'watch']);
+    grunt.registerTask('default', ['concat', 'uglify', 'imagemin','sass', 'watch', 'pug']);
 
 };

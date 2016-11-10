@@ -1,23 +1,15 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-
 @font-face {
-    font-family: 'Lato-Hairline';
-    src: url('../fonts/Lato-Hairline.eot');
-    src: url('../fonts/Lato-Hairline.eot?#iefix')format('embedded-opentype'),
-    url('../fonts/Lato-Hairline.woff') format('woff'),
-    url('../fonts/Lato-Hairline.ttf') format('truetype');
+    font-family: 'Nexa-Bold';
+    src: url('../src/fonts/Nexa-Bold.otf');
     
-    font-style: normal;
+    font-style: Bold;
     font-weight: normal;
 }
 
 @font-face {
-    font-family: 'Lato-Light';
-    src: url('../fonts/Lato-Light.eot');
-    src: url('../fonts/Lato-Light.eot?#iefix')format('embedded-opentype'),
-    url('../fonts/Lato-Light.woff') format('woff'),
-    url('../fonts/Lato-Light.ttf') format('truetype');
+    font-family: 'Nexa-Light';
+    src: url('../src/fonts/Nexa-Light.otf');
     
-    font-style: normal;
+    font-style: Bold;
     font-weight: normal;
 }
