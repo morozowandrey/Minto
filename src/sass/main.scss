@@ -7,8 +7,12 @@
 // partials
 @import 'partials/header';
 @import 'partials/content';
+@import 'partials/content-caption';
+@import 'partials/content-heading';
+@import 'partials/content-text';
 @import 'partials/side-nav';
 @import 'partials/footer';
+@import 'partials/footer-subnav';
 
 //
 // base styles
@@ -47,10 +51,27 @@ h1, h2, h3, h4, h5, p{
     margin: 0;
 }
 
+p {
+  font-family: $third-ff;
+  font-size: 21px;
+  font-weight: 400;
+}
+
+h3 {
+  font-family: $third-ff;
+  font-size: 24px;
+  font-weight: 800;
+}
+
 .content-wrapper {
   min-height: 100%;
 }
 
 .content-inside {
   padding-bottom: 60px;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
 }

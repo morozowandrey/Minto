@@ -1,12 +1,13 @@
 .side-nav {
-	padding: 60px 0 0 50px;
+	padding: 65px 0 0 50px;
+	display: inline-block;
 	
 	&__item {
 		display: block;
 		width: 165px;
 		color: $purple;
 
-		padding: 7px 5px;
+		padding: 9px 5px;
 		margin-top: 7px;
 
 		border: 3px solid $main-blue;
@@ -16,6 +17,8 @@
 		line-height: 16px;
 		text-align: center;
 		text-decoration: none;
+
+		cursor: pointer;
 	}
 
 	&__item:first-of-type {
@@ -23,6 +26,12 @@
 	}
 
 	&__item:hover {
+		background-color: $main-red;
+		border: 3px solid $main-red;
+		color: $white;
+	}
+
+	&__item--current {
 		background-color: $main-red;
 		border: 3px solid $main-red;
 		color: $white;

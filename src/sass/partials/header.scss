@@ -1,7 +1,8 @@
 .header {
 	background: url(../src/images/concept_header_bg.png);
-
+	
 	display: flex;
+	flex: 1 100%;
 
 	&-logo {
 		margin: 65px 0 35px 70px;
@@ -14,6 +15,8 @@
 	    color: $white;
 	    font-size: 36px;
 	    line-height: 36px;
+
+	    font-family: $main-ff;
 	}
 
 	&-caption:after {

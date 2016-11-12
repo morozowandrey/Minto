@@ -1,0 +1,21 @@
+.footer {
+	
+	&-subnav {
+		position: relative;
+		display: inline-block;
+
+		cursor: pointer;
+
+		&__img1 {
+			position: relative;
+			left: 84px;
+			top: 1px;
+		}
+
+		&__img2 {
+			position: relative;
+			left: 57px;
+			top: 1px;
+		}
+	}
+}
