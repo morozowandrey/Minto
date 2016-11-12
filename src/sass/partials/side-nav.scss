@@ -36,4 +36,18 @@
 		border: 3px solid $main-red;
 		color: $white;
 	}
+
+	// specific styles for different pages
+	&--live-minto-course {
+	  	
+		.side-nav__item:hover {
+			background-color: $purple2;
+			border: 3px solid $purple2;
+		}
+
+		.side-nav__item--current {
+			background-color: $purple2;
+			border: 3px solid $purple2;
+		}
+	}
 }

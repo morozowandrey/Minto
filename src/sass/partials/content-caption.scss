@@ -1,6 +1,6 @@
 .content-caption-box {
 	display: inline-block;
-    margin: 65px 0 0 115px;
+    margin: 65px 0 0 120px;
 
 	width: 865px;
 	height: 40px;
@@ -11,3 +11,15 @@
 .content-caption {
     margin: 10px 0 0 12px;
 }
+
+// specific styles for different pages
+	.content-caption-box--live-minto-course {
+  		background-color: $purple2;
+		
+		margin: 45px 0 0 120px;
+
+
+  		.content-caption {
+  			font-size: 21px;
+  		}
+  	}
