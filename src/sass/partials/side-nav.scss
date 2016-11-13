@@ -50,4 +50,17 @@
 			border: 3px solid $purple2;
 		}
 	}
+
+	&--barbara-in-your-pocket {
+	  	
+		.side-nav__item:hover {
+			background-color: $lighter-blue;
+			border: 3px solid $lighter-blue;
+		}
+
+		.side-nav__item--current {
+			background-color: $lighter-blue;
+			border: 3px solid $lighter-blue;
+		}
+	}
 }

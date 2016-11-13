@@ -1,0 +1,45 @@
+.proposals {
+	display: flex;
+
+	margin: 60px 0 0 120px;
+}
+
+.proposal {
+	width: 270px;
+
+	margin-left: 200px;
+	position: relative;
+
+	&-heading {
+		margin-bottom: 35px;
+		color: $light-blue;
+	}
+
+	&-logo {
+		display: inline-block;
+	}
+
+	&-button {
+		position: absolute;
+
+		display: inline-block;
+		padding: 8px 20px 5px;
+		margin-left: 30px;
+
+		text-align: center;
+		text-decoration: none;
+
+		cursor: pointer;
+
+		background-color: $main-blue;
+
+		border-radius: 5px;
+		border: 3px solid $main-blue;
+
+		color: $white;
+	}
+}
+
+.proposal:first-of-type {
+	margin-left: 0px;
+}
