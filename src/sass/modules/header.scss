@@ -1,0 +1,78 @@
+.header {
+	background: url(../src/images/concept_header_bg.png);
+	
+	display: flex;
+	flex: 1 100%;
+
+	&-box {
+		position: relative;
+	}
+
+	&-logo {
+		margin: 65px 0 35px 70px;
+	}
+
+	&-caption {
+		position: absolute;
+		bottom: 60px;
+	    left: 355px;
+
+	    width: 100%;
+
+	    display: inline-block;
+
+	    color: $white;
+	    font-size: 36px;
+	    line-height: 36px;
+
+	    font-family: $third-ff;
+	}
+
+	&-caption:after {
+		content: '';
+		background: $white;
+		display: block;
+
+		height: 2px;
+		width: 100%;
+		
+		margin-top: 5px;
+
+		position: relative;
+		right: 4px;
+	}
+}
+
+//Styles for flex image
+
+.FlexEmbed {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+
+.FlexEmbed:before {
+  content: "";
+  display: block;
+  width: 100%;
+}
+
+.FlexEmbed--2by1:before {
+  padding-bottom: 50%;
+}
+
+.FlexEmbed--16by9:before {
+  padding-bottom: 56.25%;
+}
+
+.FlexEmbed--4by3:before {
+  padding-bottom: 75%;
+}
+
+.CoverImage {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 200px;
+  max-width: 100%;
+}

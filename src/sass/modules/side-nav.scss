@@ -1,0 +1,40 @@
+.side-nav {
+	padding: 65px 0 0 50px;
+	display: inline-block;
+	
+	&__item {
+		font-family: $third-ff;
+		display: block;
+		width: 165px;
+		color: $main-purple;
+
+		padding: 9px 5px;
+		margin-top: 7px;
+
+		border: 3px solid $main-blue;
+		border-radius: 5px;
+		
+		font-size: 18px;
+		line-height: 16px;
+		text-align: center;
+		text-decoration: none;
+
+		cursor: pointer;
+	}
+
+	&__item:first-of-type {
+		margin-top: 0px;
+	}
+
+	&__item:hover {
+		background-color: $concept-red;
+		border: 3px solid $concept-red;
+		color: $white;
+	}
+
+	&__item--current {
+		background-color: $concept-red;
+		border: 3px solid $concept-red;
+		color: $white;
+	}
+}

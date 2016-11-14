@@ -1,80 +1,22 @@
+@import 'var';
+
 // modules
-@import 'modules/var';
-@import 'modules/mixins';
-@import 'modules/fonts';
-@import 'base/reset';
 
-// partials
-@import 'partials/header';
-@import 'partials/content';
-@import 'partials/content-caption';
-@import 'partials/content-heading';
-@import 'partials/content-text';
-@import 'partials/content-img';
-@import 'partials/side-nav';
-@import 'partials/proposal';
-@import 'partials/footer';
-@import 'partials/footer-subnav';
+@import 'modules/header';
+@import 'modules/content';
+@import 'modules/content-caption';
+@import 'modules/content-heading';
+@import 'modules/content-text';
+@import 'modules/content-img';
+@import 'modules/side-nav';
+@import 'modules/proposal';
+@import 'modules/proposal';
+@import 'modules/footer';
+@import 'modules/footer-subnav';
 
-//
 // base styles
-*{
-  box-sizing: border-box;
-	transition: all .2s;
-}
 
-html { 
-    font-family: $main-ff;
-    font-size: 16px;
-    line-height: 22px;
-    height: 100%;
-}
-body {
-  margin: 0;
-  height: 100%;
-}
-
-.wrapper{
-    max-width: 1200px;
-    min-width: 1200px;
-    margin: 0 auto;
-    height: 100%;
-}
-.clearfix:after { 
-   content: '.';
-   visibility: hidden;
-   display: block;
-   height: 0;
-   clear: both;
-   font-size: 0;
-}
-
-h1, h2, h3, h4, h5, p{
-    margin: 0;
-}
-
-p {
-  font-family: $third-ff;
-  font-size: 21px;
-  font-weight: 400;
-  line-height: 27px;
-}
-
-h3 {
-  font-family: $third-ff;
-  font-size: 24px;
-  font-weight: 800;
-}
-
-.content-wrapper {
-  min-height: 100%;
-}
-
-.content-inside {
-  padding-bottom: 60px;
-}
-
-.container {
-  display: flex;
-  flex-flow: row wrap;
-}
+@import 'base/base-styles';
+@import 'base/mixins';
+@import 'base/fonts';
+@import 'base/reset';
