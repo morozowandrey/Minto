@@ -1,0 +1,92 @@
+.homepage-boxes {
+	margin-top: 25px;
+    width: 690px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: inherit;
+
+    &__row1 {
+	    width: 690px;
+	    display: flex;
+	    justify-content: space-between;
+    }
+
+    &__row2 {
+		margin-top: 20px;
+	    width: 690px;
+	    display: flex;
+	    justify-content: space-between;
+    }
+}
+
+.homepage-box {
+	background-color: rgba(226, 81, 57, 0.3);
+	-webkit-filter: contrast(2.4);
+	filter: contrast(2.4);
+
+	border-radius: 15px;
+	width: 215px;
+	height: 135px;
+
+	border: 2px solid $white;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&__littleboxes {
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	&__littlebox {
+		background-color: rgba(226, 81, 57, 0.4);
+		-webkit-filter: contrast(2.4);
+		filter: contrast(2.4);
+
+		border-radius: 15px;
+		width: 215px;
+		height: 63px;
+
+		border: 2px solid $white;
+		margin-top: 10px;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__littlebox:first-of-type {
+		margin-top: 0px;
+	}
+
+	&__text {
+		font-size: 33px;
+		font-family: $third-ff;
+
+		color: $white;
+
+		text-align: center;
+	}
+
+	&__text--littlebox {
+		font-size: 27px;
+	}
+
+}
+////////// Hover states
+
+.homepage-box:hover .homepage-box__text {
+	text-shadow: 1px 1px 0px $white, 0 0 1em $white;
+}
+.homepage-box:hover {
+	box-shadow: 1px 1px 1px $white, 0 0 1em $white;
+}
+
+.homepage-box__littlebox:hover  {
+	box-shadow: 1px 1px 1px $white, 0 0 1em $white;
+}
+
+.homepage-box__littlebox:hover .homepage-box__text {
+	text-shadow: 1px 1px 0px $white, 0 0 1em $white;
+}

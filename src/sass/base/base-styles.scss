@@ -234,3 +234,66 @@ h3 {
   }
 
 }
+
+/////////////////////////////////////////////////////////////////////////
+
+.homepage {
+  background: url(../src/images/homepage_bg.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  overflow: auto;
+
+  .container {
+    min-height: 100%;
+    display: inherit;
+  }
+
+  .content {
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &-box {
+      width: 690px;
+
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .header {
+    background: none;
+
+    margin-bottom: 50px;
+  }
+
+  .content-caption {
+    font-size: 64px;
+    font-family: "Nexa-Light", "sans pro", "serif";
+    font-weight: 400;
+
+    color: $white;
+    line-height: 60px;
+    margin: 0;
+
+    top: 0;
+    left: 0;
+  }
+
+  .content-text {
+    width: 344px;
+    margin-left: 40px;
+    padding: 0;
+    
+    font-size: 22px;
+    font-family: "Source Sans Pro", "sans pro", "serif";
+    font-weight: 400;
+
+    color: #ffffff;
+  }
+
+  .footer {
+    margin-top: -50px;
+  }
+}
