@@ -12,6 +12,8 @@ html {
 body {
   margin: 0;
   height: 100%;
+
+  overflow-x: hidden;
 }
 
 .wrapper{
@@ -56,16 +58,19 @@ h3 {
 }
 
 .container {
-  display: flex;
-  flex-flow: row wrap;
   overflow-x: hidden;
 
   min-height: 100%;
+  margin-bottom: 75px;
 }
 
 // Modificators for diff pages
 
 .leave-minto-course {
+
+  .container {
+    margin-bottom: 0;
+  }
 
   .header {
     background: url(../src/images/livecourse_header_bg.png);
@@ -112,6 +117,10 @@ h3 {
 
 .summury-app {
 
+    .container {
+      margin-bottom: 170px;
+    }
+
   .header {
     background: url(../src/images/barbara-in-your-pocket__header.png);
   }
@@ -152,7 +161,7 @@ h3 {
   }
 
   .footer {
-    margin-top: 125px;
+    // margin-top: 125px;
   }
 }
 
@@ -230,7 +239,7 @@ h3 {
   }
 
   .footer {
-    margin-top: 0;
+    // margin-top: 0;
   }
 
 }
@@ -248,6 +257,8 @@ h3 {
   .container {
     min-height: 100%;
     display: inherit;
+
+    margin-bottom: 0;
   }
 
   .content {
@@ -292,8 +303,58 @@ h3 {
 
     color: #ffffff;
   }
+}
 
-  .footer {
-    margin-top: -50px;
+/////////////////////////////////////////////////////////////////////////
+
+.contact {
+
+  .container {
+    margin-bottom: 0;
   }
+
+  .header {
+    background: url(../src/images/contact-header_bg.png);
+  }
+
+  .CoverImage {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 200px;
+    max-width: 100%;
+  }
+
+  .side-nav__item:hover {
+    background-color: $contact-green;
+    border: 3px solid $contact-green;
+  }
+
+  .side-nav__item--current {
+    background-color: $contact-green;
+    border: 3px solid $contact-green;
+  }
+
+  .content-caption {
+    font-size: 21px;
+    font-weight: 400;
+    
+    position: initial;
+    padding: 10px 0 0 12px;
+  }
+
+  .content-caption-box {
+      background-color: $contact-green;
+      margin: 65px 0 0 120px;
+      position: absolute;
+  }
+
+  .content-caption-box:after {
+      background-color: $contact-green;
+  }
+
+  .content-text {
+    color: $light-blue;
+  }
+
 }
