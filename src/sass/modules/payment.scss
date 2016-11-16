@@ -1,0 +1,72 @@
+.payment-boxes {
+	position: relative;
+}
+
+.payment-box1 {
+	
+}
+
+.payment-box2 {
+
+}
+
+.counter-box {
+	width: 30px;
+    height: 30px;
+    display: inline-block;
+	
+	position: relative;
+    left: 35px;
+    top: 8px;
+
+    border-radius: 5px;
+    border: 2px solid $purple2;
+}
+
+.counter-value {
+	text-align: center;
+	font-size: 23px;
+	font-family: $third-ff;
+	color: $purple2;
+
+	position: absolute;
+    left: 4.5px;
+}
+
+//////////////
+
+
+.payment-value-box {
+	display: inline-block;
+}
+
+.payment-value__count {
+	margin-left: 9px;
+
+	font-size: 23px;
+	font-family: $third-ff;
+	color: $purple2;
+}
+
+//////////////
+
+.payment-mode-box {
+
+}
+
+.payment-mode {
+	position: relative;
+	top: 50px;
+	right: 145px;
+
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.payment-mode--first {
+	top: 47px;
+}
+
+.payment-mode__img {
+
+}

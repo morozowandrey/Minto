@@ -1,0 +1,49 @@
+.back__button, .payment-button , .sign-up__button {
+	position: relative;
+	top: 38px;
+	left: 75px;
+
+	padding: 3px 35px 3px 45px;
+	
+	text-decoration: none;
+	border-radius: 5px;
+
+	font-family: $third-ff;
+	font-size: 17px;
+	font-weight: 400;
+
+	color: $white;
+	background-color: $purple2;
+}
+
+.back__button:before {
+	content: url(../src/images/buy-the-course_arrow-left.png);
+
+	position: absolute;
+	bottom: 0px;
+	left: 18px;
+}
+
+//////////
+
+.payment-button {
+	position: relative;
+	top: 0px;
+
+	padding: 7px 26px;
+}
+
+.payment-button:before {
+	content: url(../src/images/buy-the-course_bin.png);
+
+	position: absolute;
+	left: -50px;
+	top: -2px;
+}
+
+.sign-up__button {
+	padding: 9.5px 96px;
+
+	top: 10px;
+	left: 0;
+}

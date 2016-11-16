@@ -358,3 +358,116 @@ h3 {
   }
 
 }
+
+/////////////////////////////////////////////////////////////////////////
+
+.buy-the-course {
+      margin-bottom: 0px;
+
+  .header {
+    background: url(../src/images/buy-the-course_header_bg.png);
+  }
+
+  .content {
+    flex-wrap: wrap;
+  }
+
+  .CoverImage {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 200px;
+    max-width: 100%;
+  }
+
+  .content-heading {
+    font-size: 23px;
+    font-family: $third-ff;
+
+    padding: 10px 385px 0 350px;
+  }
+
+  .content-heading--payment-num {
+    padding: 0px 0px 20px 0px;
+    margin-left: 20px;
+
+    display: inline-block;
+  }
+
+  .content-heading--payment-sum {
+    padding: 0px 0px 30px 0px;
+    margin-left: 20px;
+
+    display: inline-block;
+  }
+
+  .content-text {
+    font-size: 15px;
+    font-family: $secondary-ff;
+
+    padding: 5px 65px 0 350px;
+    line-height: 18px;
+
+    margin-bottom: 40px;
+  }
+
+  .contacts-input-box {
+    margin: 0px 0 0 20px;
+    width: 460px;
+  }
+
+  .buy-the-course__right-aside {
+    width: 315px;
+  }
+
+  .buy-the-course__left-aside {
+    width: 340px;
+    margin-left: 25px;
+  }
+
+    input, textarea {
+      padding:7px 10px;
+    }
+
+    .field-wrap {
+      margin-bottom: 13px;
+
+      font-family: $third-ff;
+      font-size: 17px;
+      color: $main-purple;
+
+      position: relative;
+    }
+
+    .field-wrap--last {
+      margin-bottom: 20px;
+    }
+
+    .field-wrap__dropdown {
+      cursor: pointer;
+    }
+
+    .field-wrap__dropdown:after {
+      content: url(../src/images/buy-the-course_arrowdown.png);
+
+      position: absolute;
+      right: 14px;
+      bottom: 10px;
+    }
+
+    .field-wrap--right {
+      margin-bottom: 0px;
+      position: inherit;
+      float: right;
+    }
+
+    .input-message__fild--right {
+      height: 205px;
+      width: 195px;
+    }
+
+    .input-message__fild--left {
+      width: 335px;
+      height: 255px;
+    }
+}
