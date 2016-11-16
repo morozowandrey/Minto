@@ -475,3 +475,104 @@ h3 {
       height: 255px;
     }
 }
+
+/////////////////////////////////////////////////////////////////////////
+
+.TCs, .policies, .testimonials {
+
+  .container {
+    margin-bottom: 0;
+  }
+
+  .header {
+    background: url(../src/images/T&Cs-header_bg.png);
+  }
+
+  .CoverImage {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 200px;
+    max-width: 100%;
+  }
+
+  .right-aside {
+    width: 100%;
+  }
+
+  .back__button {
+    padding: 5px 35px 5px 45px;
+
+    top: 55px;
+  }
+
+  .content-text {
+    padding: 25px 120px 0 135px;
+  }
+
+  .content-heading {
+    padding: 25px 150px 0 135px;
+  }
+
+  .content-caption-box {
+      background-color: $purple2;
+      margin: 45px 0 0 135px;
+  }
+
+  .content-caption-box:after {
+      background-color: $purple2;
+  }
+}
+
+/////////////////////////////////////////////////////////////////////////
+
+.policies {
+
+  .header {
+    background: url(../src/images/policies-header_bg.png);
+  }
+
+  .CoverImage {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 200px;
+    max-width: 100%;
+  }
+}
+
+/////////////////////////////////////////////////////////////////////////
+
+.testimonials {
+
+  .container {
+    margin-bottom: 100px;
+  }
+
+  .header {
+    background: url(../src/images/testimonials-header_bg.png);
+  }
+
+  .CoverImage {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 200px;
+    max-width: 100%;
+  }
+
+  .content-caption-box {
+      background-color: $testimonials-vinous;
+      margin: 45px 0 0 135px;
+
+      font-weight: 400;
+  }
+
+  .content-caption-box:after {
+      background-color: $testimonials-vinous;
+  }
+
+  .content-text {
+    padding: 40px 120px 0 135px;
+  }
+}

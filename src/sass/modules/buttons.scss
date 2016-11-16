@@ -60,3 +60,23 @@
 	left: 165px;
     top: 6px;
 }
+
+///////////////
+
+.buynow__button{
+	position: relative;
+	top: 102px;
+	left: -48px;
+
+	padding: 5px 24px;
+	
+	text-decoration: none;
+	border-radius: 5px;
+
+	font-family: $third-ff;
+	font-size: 17px;
+	font-weight: 400;
+
+	color: $white;
+	background-color: $testimonials-blue;
+}
