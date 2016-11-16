@@ -46,4 +46,17 @@
 
 	top: 10px;
 	left: 0;
+
+	&__text {
+		position: relative;
+		right: 85px;
+	}
+}
+
+.sign-up__button:after {
+	content: url(../src/images/buy-the-course_inlogo.png);
+
+	position: absolute;
+	left: 165px;
+    top: 6px;
 }
