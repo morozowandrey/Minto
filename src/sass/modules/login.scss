@@ -1,0 +1,88 @@
+.login-help {
+	position: relative;
+    bottom: 190px;
+
+    &__text1 {
+		font-family: $secondary-ff;
+		font-size: 14px;
+
+		color: $white;
+
+		margin-left: 162px;
+    }
+
+    &__text2 {
+		margin-left: 30px;
+    }
+
+    &__signup {
+		position: relative;
+		margin-top: 60px;
+
+		&__text {
+			color: $white;
+			margin-left: 160px;
+		}
+    }
+}
+
+ // check-box
+
+.login {
+
+	&-checkbox {
+		position: relative;
+	}
+
+	&__check {
+		cursor: pointer;
+		width: 20px;
+		left: 140px;
+	}
+	
+	// default check-box
+
+	&__check:not(checked) {
+		position: absolute;
+		opacity: 0;
+		z-index: 2;
+		height: 21px;
+		width: 21px;
+	}
+	
+	// custom check-box
+
+	&__check:not(checked) +  .login__inner{
+		position: relative;
+		left: 140px;
+	}
+
+	&__check:not(checked) +  .login__inner:before{
+		content: '';
+		position: absolute;
+		top: 4px;
+
+		width: 15px;
+		height: 15px;
+
+		border-radius: 3px;
+		background-color: $white;
+	}
+
+	&__check:not(checked) +  .login__inner:after{
+		content: '';
+		position: absolute;
+		top: 8px;
+		left: 4px;
+		width: 7px;
+		height: 7px;
+		opacity: 0;
+		border-radius: 150%;
+		background-color: $login-purple;
+		transition: all .2s;
+	}
+
+	&__check:checked +  .login__inner:after{
+		opacity: 1;
+	}
+}

@@ -80,3 +80,34 @@
 	color: $white;
 	background-color: $testimonials-blue;
 }
+
+//////////////
+
+.login__button {
+	position: relative;
+    bottom: 215px;
+    left: 250px;
+    padding: 5px 32px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: $third-ff;
+    font-size: 21px;
+    font-weight: 400;
+    color: $login-purple;
+    background-color: $white;
+}
+
+.login-signup__button {
+	position: relative;
+    left: 302px;
+    bottom: 23px;
+
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: $third-ff;
+    font-size: 21px;
+    font-weight: 400;
+    color: $login-purple;
+    background-color: $white;
+}

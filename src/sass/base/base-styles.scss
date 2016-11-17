@@ -576,3 +576,65 @@ h3 {
     padding: 40px 120px 0 135px;
   }
 }
+
+/////////////////////////////////////////////////////////////////////////
+
+.login {
+
+  .container {
+    margin-bottom: 0px;
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header {
+    background: url(../src/images/login-alt-header_bg.png);
+  }
+
+  .CoverImage {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 200px;
+    max-width: 100%;
+  }
+
+  .contacts-input-box {
+    margin: 120px 0 0 0;
+    width: 615px;
+    height: 370px;
+    background: $login-purple;
+
+    border-radius: 10px;
+  }
+
+    input::-webkit-input-placeholder {
+      color: $login-purple;
+      opacity: 1;
+    }
+
+    .field-wrap {
+      padding-left: 60px;
+      margin-bottom: 6px;
+
+      font-family: $third-ff;
+      font-size: 21px;
+      color: $main-purple;
+
+      position: relative;
+    }
+
+    .field-wrap--username {
+      padding: 45px 0 6px 60px;
+    }
+
+    .login-username-fild, .login-pass-fild {
+      width: 490px;
+      padding: 0px 10px;
+      text-align: center;
+    }
+}
