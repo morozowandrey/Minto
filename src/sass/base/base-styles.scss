@@ -11,14 +11,20 @@ html {
 }
 body {
   margin: 0;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100vh;
 
   overflow-x: hidden;
 }
 
+img {
+  max-width: 100%;
+}
+
 .wrapper{
     max-width: 1200px;
-    min-width: 1200px;
     margin: 0 auto;
     height: 100%;
 }
@@ -49,28 +55,25 @@ h3 {
   font-weight: 800;
 }
 
-.content-wrapper {
-  min-height: 100%;
-}
+.container {
+  flex: 1;
 
-.content-inside {
   padding-bottom: 50px;
 }
 
-.container {
-  overflow-x: hidden;
+@media screen and (max-width: 1200px) {
+  .content-caption-box:after {
+    content: none;
+  }
 
-  min-height: 100%;
-  margin-bottom: 75px;
+  body {
+    overflow-x: auto;
+  }
 }
 
 // Modificators for diff pages
 
 .leave-minto-course {
-
-  .container {
-    margin-bottom: 0;
-  }
 
   .header {
     background: url(../src/images/livecourse_header_bg.png);
@@ -107,19 +110,11 @@ h3 {
       background-color: $purple2;
   }
 
-  .footer {
-    margin-top: 0;
-  }
-
 }
 
 /////////////////////////////////////////////////////////////////////////
 
 .summury-app {
-
-    .container {
-      margin-bottom: 170px;
-    }
 
   .header {
     background: url(../src/images/barbara-in-your-pocket__header.png);
@@ -158,10 +153,6 @@ h3 {
 
   .content-text {
     color: $light-blue;
-  }
-
-  .footer {
-    // margin-top: 125px;
   }
 }
 
@@ -237,11 +228,6 @@ h3 {
           margin-bottom: 35px;
         }
   }
-
-  .footer {
-    // margin-top: 0;
-  }
-
 }
 
 /////////////////////////////////////////////////////////////////////////
@@ -254,14 +240,8 @@ h3 {
 
   overflow: auto;
 
-  .container {
-    min-height: 100%;
-    display: inherit;
-
-    margin-bottom: 0;
-  }
-
   .content {
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
 
@@ -277,6 +257,8 @@ h3 {
     background: none;
 
     margin-bottom: 50px;
+
+    display: inherit;
   }
 
   .content-caption {
@@ -303,14 +285,19 @@ h3 {
 
     color: #ffffff;
   }
+
+  .content-box {
+    margin-left: 0px;
+    padding-left: 0px;
+  }
 }
 
 /////////////////////////////////////////////////////////////////////////
 
 .contact {
-
-  .container {
-    margin-bottom: 0;
+  
+  .content {
+    display:flex;
   }
 
   .header {
@@ -373,7 +360,7 @@ h3 {
   }
 
   .container {
-    margin-bottom: 300px;
+    padding-bottom: 300px;
   }
 
   .CoverImage {
@@ -480,10 +467,6 @@ h3 {
 
 .TCs, .policies, .testimonials {
 
-  .container {
-    margin-bottom: 0;
-  }
-
   .header {
     background: url(../src/images/T&Cs-header_bg.png);
   }
@@ -497,13 +480,12 @@ h3 {
   }
 
   .right-aside {
-    width: 100%;
+    position: relative;
+    float: left;
   }
 
   .back__button {
     padding: 5px 35px 5px 45px;
-
-    top: 55px;
   }
 
   .content-text {
@@ -528,6 +510,11 @@ h3 {
 
 .policies {
 
+  .content-box {
+    margin-left: 215px;
+    padding-left: 0px;
+  }
+
   .header {
     background: url(../src/images/policies-header_bg.png);
   }
@@ -546,7 +533,7 @@ h3 {
 .testimonials {
 
   .container {
-    margin-bottom: 100px;
+    padding-bottom: 100px;
   }
 
   .header {
@@ -581,14 +568,14 @@ h3 {
 
 .login {
 
-  .container {
-    margin-bottom: 0px;
-  }
-
   .content {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .container {
+      padding-bottom: 0px;
   }
 
   .header {

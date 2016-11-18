@@ -1,6 +1,11 @@
 .side-nav {
 	padding: 65px 0 0 50px;
 	display: inline-block;
+
+	&-box {
+		width: 165px;
+		float: left;
+	}
 	
 	&__item {
 		font-family: $third-ff;
@@ -37,4 +42,8 @@
 		border: 3px solid $concept-red;
 		color: $white;
 	}
+}
+
+.side-nav--stickytop {
+	padding-top: 0;
 }

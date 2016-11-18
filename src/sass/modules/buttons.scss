@@ -1,7 +1,7 @@
 .back__button, .payment-button , .sign-up__button {
-	position: relative;
-	top: 38px;
-	left: 75px;
+	top: 0;
+	left: 60px;
+	position: absolute;
 
 	padding: 3px 35px 3px 45px;
 	
@@ -65,8 +65,8 @@
 
 .buynow__button{
 	position: relative;
-	top: 102px;
-	left: -48px;
+	top: 45px;
+	left: 60px;
 
 	padding: 5px 24px;
 	

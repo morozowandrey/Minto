@@ -61,15 +61,19 @@
 	}
 
 	&__text {
-		font-size: 33px;
+		font-size: 31px;
 		font-family: $third-ff;
+		line-height: 31px;
 
 		color: $white;
 
 		text-align: center;
+
+		padding: 0 25px;
 	}
 
 	&__text--littlebox {
+		padding: 0 0;
 		font-size: 27px;
 	}
 
