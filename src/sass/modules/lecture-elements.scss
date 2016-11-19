@@ -1,0 +1,143 @@
+//////////////////////////////////lecture-elements///////////////////////////////////////
+
+.lecture-elements {
+
+  .container {
+      padding-bottom: 0px;
+  }
+
+  .header {
+    background: url(../src/images/lecture-header_bg.png);
+  }
+
+  .CoverImage {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 200px;
+    max-width: 100%;
+  }
+
+  .header-caption {
+    bottom: 55px;
+    left: 250px;
+
+    font-size: 47px;
+    line-height: 45px;
+  }
+
+  .header-caption:after {
+    content: none;
+  }
+
+  .header-caption--orange {
+    color: $lecture-orange;
+  }
+}
+
+.oneA-lecture {
+  background: url(../src/images/lecture-1Atitle_bg.png);
+
+  &__caption {
+    font-size: 47px;
+    line-height: 45px;
+    font-family: $third-ff;
+    color: $white;
+    padding: 30px 145px;
+  }
+}
+
+.lecture-footer {
+  padding: 145px 0 95px;
+
+  &__box {
+    background-color: $white;
+    text-align: center;
+    position: relative;
+
+    padding: 75px 145px 70px;
+    margin-bottom: 90px;
+    
+    &--buttons {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__box:before {
+    content: '';
+    position: absolute;
+    margin: 0 auto;
+    height: 4px;
+    background-color: $lecture-orange;
+    width: 76%;
+    left: 12%;
+    right: 12%;
+    top: 0;
+  }
+
+  &__box:after {
+    content: '';
+    position: absolute;
+    margin: 0 auto;
+    height: 4px;
+    background-color: $lecture-orange;
+    width: 76%;
+    left: 12%;
+    right: 12%;
+    bottom: 0;
+  }
+
+  &__heading {
+    color: $main-purple;
+    font-family: $third-ff;
+    font-size: 34px;
+    position: relative;
+    letter-spacing: 2px;
+    padding: 25px 175px 30px;
+
+    &--main {
+      letter-spacing: 11px;
+      text-transform: uppercase;
+      color: $main-purple;
+      font-family: $third-ff;
+      font-size: 48px;
+      position: absolute;
+      left: 29%;
+      bottom: 75px;
+    }
+  }
+
+  &__text {
+    color: $main-purple;
+    font-family: $third-ff;
+    font-size: 23px;
+  }
+
+  &__nextlevel-button  { 
+      padding: 30px 10px;
+      background-color: $lecture-orange;
+      text-transform: uppercase;
+      font-family: $third-ff;
+      font-size: 18px;
+      text-decoration: none;
+      color: $white;
+      text-align: center;
+      padding: 16.5px 27px;
+      border-radius: 15px;
+  }
+
+  &__menu-button {
+    padding: 30px 10px;
+    background-color: $lecture-orange;
+    text-transform: uppercase;
+    font-family: $third-ff;
+    font-size: 18px;
+    text-decoration: none;
+    color: $white;
+    text-align: center;
+    padding: 16.5px 43.5px;
+    border-radius: 15px;
+    margin-left: 90px;
+  }
+}
