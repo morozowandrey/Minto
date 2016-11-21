@@ -84,10 +84,10 @@
 //////////////
 
 .login__button {
-	position: relative;
-    bottom: 215px;
-    left: 250px;
+	margin: 0 auto;
     padding: 5px 32px;
+    margin-bottom: 20px;
+
     text-decoration: none;
     border-radius: 5px;
     font-family: $third-ff;
@@ -98,9 +98,7 @@
 }
 
 .login-signup__button {
-	position: relative;
-    left: 302px;
-    bottom: 23px;
+	height: 100%;
 
     padding: 5px 20px;
     text-decoration: none;

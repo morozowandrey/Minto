@@ -610,6 +610,7 @@ h3 {
 
   .header {
     background: url(../src/images/login-alt-header_bg.png);
+    margin-bottom: 115px;
   }
 
   .CoverImage {
@@ -621,12 +622,14 @@ h3 {
   }
 
   .contacts-input-box {
-    margin: 120px 0 0 0;
-    width: 615px;
-    height: 370px;
-    background: $login-purple;
+    min-width: 615px;
 
-    border-radius: 10px;
+    margin: 0 auto;
+    padding: 45px 60px 30px;
+  }
+
+  .contacts-input-wrap {
+    width: 100%;
   }
 
     input::-webkit-input-placeholder {
@@ -635,23 +638,25 @@ h3 {
     }
 
     .field-wrap {
-      padding-left: 60px;
       margin-bottom: 6px;
 
       font-family: $third-ff;
       font-size: 21px;
       color: $main-purple;
 
-      position: relative;
+      // position: relative;
     }
 
-    .field-wrap--username {
-      padding: 45px 0 6px 60px;
+    .field-wrap--username, .field-wrap_email {
+          // padding: 0 63px;
     }
 
     .login-username-fild, .login-pass-fild {
-      width: 490px;
-      padding: 0px 10px;
+      padding: 1px 10px;
       text-align: center;
+    }
+
+    .contacts {
+      
     }
 }
