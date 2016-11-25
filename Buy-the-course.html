@@ -27,30 +27,36 @@
         </section>
 
         <aside class="buy-the-course__right-aside">
-          <div class="field-wrap field-wrap--right">
-              <textarea class="input-message__fild--right" name="message" id="message" tabindex="4" placeholder="Upload Profile Picture:"></textarea>
-          </div>
+          <form action="">
+            <div class="field-wrap field-wrap--right">
+                <textarea class="input-message__fild--right" name="message" id="message" tabindex="4" placeholder="Upload Profile Picture:"></textarea>
+            </div>
+          </form>
         </aside>
         
         <section>
             <form action="/" method="post"> 
               <div class="contacts-input-box">
-                <div class="field-wrap field-wrap_email">
+                <div class="field-wrap">
                     <input placeholder="Name" type=""required autocomplete="off"/>
                 </div>
-                <div class="field-wrap field-wrap__dropdown field-wrap_email">
-                    <input placeholder="Job Title" type=""required autocomplete="off"/>
+                <div class="field-wrap field-wrap--select">
+                  <select class="contacts-select">
+                      <option class="contacts-select__option">Job title</option>
+                      <option><span>Job title</span></option>
+                      <option><span>Job title</span></option>
+                  </select>
                 </div>      
-                <div class="field-wrap field-wrap_pass">
+                <div class="field-wrap">
                     <input placeholder="Company" type=""required autocomplete="off"/>
                 </div>
-                <div class="field-wrap field-wrap_pass">
+                <div class="field-wrap">
                     <input placeholder="Email" type=""required autocomplete="off"/>
                 </div>
-                <div class="field-wrap field-wrap_pass">
+                <div class="field-wrap">
                     <input placeholder="Password" type="password"required autocomplete="off"/>
                 </div>
-                <div class="field-wrap field-wrap--last field-wrap_pass">
+                <div class="field-wrap field-wrap--last">
                     <input placeholder="Password" type="password"required autocomplete="off"/>
                 </div>
               </div>
@@ -59,9 +65,11 @@
             <div class="payment-boxes">
               <div class="payment-box1">
                 <h3 class="content-heading content-heading--payment-num">Number Of Courses :</h3>
-                <div class="counter-box">
-                  <p class="counter-value"></p>
-                </div>
+                <form class="buy-the-course__form" action="">
+                  <div class="field-wrap field-wrap--numder-of-courses">
+                      <input class="buy-the-course__input" placeholder="" type=""required autocomplete="off"/>
+                  </div>  
+                </form>
               </div>
               
               <div class="payment-box1">
@@ -72,28 +80,34 @@
               </div>
 
               <div class="payment-mode-box">
-                <a href="" class="payment-button">Confirm & Pay</a>
+                <div class="payment-button__wrap">
+                  <a href="" class="payment-button">Confirm & Pay</a>
+                </div>
 
-                <a href="" class="payment-mode payment-mode--first">
-                  <img src="src/images/buy-the-course_visa.png" alt="" class="payment-mode__img">
-                </a>
-                <a href="" class="payment-mode">
-                  <img src="src/images/buy-the-course_mastercard.png" alt="" class="payment-mode__img">
-                </a>
-                <a href="" class="payment-mode">
-                  <img src="src/images/buy-the-course_paypal.png" alt="" class="payment-mode__img">
-                </a>
-                <a href="" class="payment-mode">
-                  <img src="src/images/buy-the-course_americanexpress.png" alt="" class="payment-mode__img">
-                </a>
+                <div class="payment-modes">
+                  <a href="" class="payment-mode">
+                    <img class="payment-mode__img1" src="src/images/buy-the-course_visa.png" alt="">
+                  </a>
+                  <a href="" class="payment-mode">
+                    <img src="src/images/buy-the-course_mastercard.png" alt="">
+                  </a>
+                  <a href="" class="payment-mode">
+                    <img class="payment-mode__img2" src="src/images/buy-the-course_paypal.png" alt="">
+                  </a>
+                  <a href="" class="payment-mode">
+                    <img src="src/images/buy-the-course_americanexpress.png" alt="">
+                  </a>
+                </div>
               </div>
             </div>
         </section>
         
         <aside class="contact-adresses buy-the-course__left-aside">
-          <div class="field-wrap">
-            <textarea class="input-message__fild--left" name="message" id="message" tabindex="4" placeholder="Postal Adress"></textarea>
-          </div>
+          <form action="">
+            <div class="field-wrap">
+              <textarea class="input-message__fild--left" name="message" id="message" tabindex="4" placeholder="Postal Adress"></textarea>
+            </div>
+          </form>
 
           <a href="" class="sign-up__button"><span class="sign-up__button__text">Quick sign up with</span></a>
         </aside>

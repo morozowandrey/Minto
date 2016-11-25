@@ -3,7 +3,8 @@
 }
 
 .payment-box1 {
-	
+	position: relative;
+	margin-left: 20px;
 }
 
 .payment-box2 {
@@ -51,22 +52,26 @@
 //////////////
 
 .payment-mode-box {
-
+	margin-left: 20px;
 }
 
 .payment-mode {
-	position: relative;
-	top: 50px;
-	right: 145px;
-
 	text-decoration: none;
 	cursor: pointer;
 }
 
-.payment-mode--first {
-	top: 47px;
+.payment-modes {
+	margin-top: 14px;
 }
 
-.payment-mode__img {
+.payment-mode__img1 {
+	margin-bottom: 4px;
+}
 
+.payment-mode__img2 {
+	margin-bottom: 2px;
+}
+
+.payment-button__wrap {
+	position: relative;
 }

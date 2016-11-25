@@ -408,14 +408,12 @@ h3 {
 
   .content-heading--payment-num {
     padding: 0px 0px 20px 0px;
-    margin-left: 20px;
 
     display: inline-block;
   }
 
   .content-heading--payment-sum {
     padding: 0px 0px 30px 0px;
-    margin-left: 20px;
 
     display: inline-block;
   }
@@ -446,8 +444,14 @@ h3 {
     position: relative;
   }
 
-    input, textarea {
+    textarea {
       padding:7px 10px;
+    }
+
+    input {
+      line-height: 36px;
+      height: 40px;
+      padding: 0 0 0 10px;
     }
 
     .field-wrap {
@@ -458,6 +462,40 @@ h3 {
       color: $main-purple;
 
       position: relative;
+    }
+
+    .field-wrap--select {
+      border:3px solid $main-purple;
+      border-radius: 10px;
+      transition:border-color .25s ease, box-shadow .25s ease;
+      overflow: hidden;
+      background-color: #fff;
+
+      width: 460px;
+      height: 40px;
+
+      line-height: 36px;
+      padding-left: 10px;
+          
+      background: url(../src/images/buy-the-course_arrowdown.png) no-repeat right;
+
+      background-position: 97% 50%;
+    }
+
+    .field-wrap--select select {
+      width: 100%;
+      color: $main-purple;
+      border: none;
+      box-shadow: none;
+      background-color: transparent;
+      background-image: none;
+      -webkit-appearance: none;
+         -moz-appearance: none;
+              appearance: none;
+    }
+
+    .field-wrap--select select:focus {
+      outline: none;
     }
 
     .field-wrap--last {
@@ -476,10 +514,34 @@ h3 {
       bottom: 10px;
     }
 
-    .field-wrap--right {
+    .field-wrap--right { 
       margin-bottom: 0px;
       position: inherit;
       float: right;
+    }
+
+    .field-wrap--numder-of-courses { 
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+
+    }
+
+    .buy-the-course__form {
+      display: inline-block;
+
+      margin-left: 30px;
+
+      position: absolute;
+      top: -2px;
+    }
+
+    .buy-the-course__input {
+      border-radius: 5px;
+      line-height: 26px;
+      height: 30px;
+      padding: 0;
+      text-align: center;
     }
 
     .input-message__fild--right {
@@ -643,20 +705,10 @@ h3 {
       font-family: $third-ff;
       font-size: 21px;
       color: $main-purple;
-
-      // position: relative;
-    }
-
-    .field-wrap--username, .field-wrap_email {
-          // padding: 0 63px;
     }
 
     .login-username-fild, .login-pass-fild {
       padding: 1px 10px;
       text-align: center;
-    }
-
-    .contacts {
-      
     }
 }
