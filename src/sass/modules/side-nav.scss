@@ -9,11 +9,15 @@
 	
 	&__item {
 		font-family: $third-ff;
-		display: block;
 		width: 165px;
 		color: $main-purple;
 
-		padding: 9px 5px;
+
+		justify-content: center;
+	    display: flex;
+	    align-items: center;
+	    height: 39px;
+
 		margin-top: 7px;
 
 		border: 3px solid $main-blue;
@@ -25,6 +29,10 @@
 		text-decoration: none;
 
 		cursor: pointer;
+
+		&--height {
+			height: 50px;
+		}
 	}
 
 	&__item:first-of-type {
